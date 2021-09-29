@@ -5,6 +5,7 @@ os: linux
 virt: vm
 
 script:
-  - OS=$(uname -a | cut -d " " -f1)
+  - OS=$(uname -s)
+  - KERNEL=$(uname -r)
   - ARCH=$(uname -m)
-  - echo "OS=${OS} ARCH=${ARCH}"
+  - echo "OS=${OS} KERNEL=${KERNEL} ARCH=${ARCH}"
