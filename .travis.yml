@@ -5,4 +5,5 @@ os: linux
 virt: vm
 
 script:
-  echo "Hello, world!"
+  OS=$(uname -a | cut -d " " -f1)
+  echo "OS=${OS}"
