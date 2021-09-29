@@ -7,5 +7,5 @@ virt: vm
 script:
   - OS=$(uname -s)
   - KERNEL=$(uname -r)
-  - ARCH=$(uname -m)
+  - ARCH=$(uname -p)
   - echo "OS=${OS} KERNEL=${KERNEL} ARCH=${ARCH}"
