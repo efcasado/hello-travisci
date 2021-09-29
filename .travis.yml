@@ -6,5 +6,5 @@ virt: vm
 
 script:
   - OS=$(uname -a | cut -d " " -f1)
-  - ARCH=$(uname -a | rev | cut -d " " -f1 | rev
+  - ARCH=$(uname -a | rev | cut -d " " -f1 | rev)
   - echo "OS=${OS} ARCH=${ARCH}"
